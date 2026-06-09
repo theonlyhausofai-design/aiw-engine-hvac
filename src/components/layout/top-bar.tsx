@@ -42,10 +42,10 @@ export function TopBar({
             <Menu className="h-4 w-4" />
           </Button>
         ) : null}
-        <Link href="/" className="flex items-center gap-2.5" aria-label="AIW Content Engine home">
+        <Link href="/" className="flex items-center gap-2.5" aria-label="The Website Dept home">
           <Image
             src="/aiw-sparkle.png"
-            alt="AIW"
+            alt="The Website Dept"
             width={56}
             height={56}
             priority

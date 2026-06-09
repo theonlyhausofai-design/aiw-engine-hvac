@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "AIW Content Engine",
+  title: "The Website Dept Content Engine",
   description:
     "Reels, carousels, stories, and long-form scripts written in your voice — anchored to your business, frameworks, and feedback.",
   icons: {
@@ -14,14 +14,14 @@ export const metadata: Metadata = {
     apple: "/aiw-logo.png",
   },
   openGraph: {
-    title: "AIW Content Engine",
+    title: "The Website Dept Content Engine",
     description: "Original scripts in your voice, every time.",
     images: ["/aiw-logo.png"],
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "AIW Content Engine",
+    title: "The Website Dept Content Engine",
     description: "Original scripts in your voice, every time.",
     images: ["/aiw-logo.png"],
   },

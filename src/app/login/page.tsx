@@ -41,13 +41,13 @@ export default async function LoginPage({
       <div className="flex flex-col items-center text-center">
         <Image
           src="/aiw-logo.png"
-          alt="AIW"
+          alt="The Website Dept"
           width={72}
           height={72}
           priority
         />
         <p className="mt-4 text-caption uppercase tracking-[0.24em] text-[color:var(--color-muted)]">
-          AIW Content Engine
+          The Website Dept
         </p>
         <h1 className="aiw-wordmark mt-2 text-display text-[color:var(--color-foreground)]">
           {mode === "sign-up" ? "Claim this instance" : "Sign in"}

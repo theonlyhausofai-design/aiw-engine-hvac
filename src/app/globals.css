@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 /* =============================================================================
- * AIW Content Engine — design tokens
+ * The Website Dept Content Engine — design tokens
  *
- * Single source of truth for color, type, spacing, motion, and the AIW brand
+ * Single source of truth for color, type, spacing, motion, and the TWD brand
  * palette. No raw hex values in components — refer back here.
  * Logo cues: bold monochrome circle, italic wordmark, sparkle stars, swooshing
- * arc. Accent is a deliberate AIW orange that reads warm and confident on the
+ * arc. Accent is a deliberate brand purple that reads warm and confident on the
  * dark surface without fighting the monochrome mark.
  * ============================================================================= */
 
@@ -22,7 +22,7 @@
   --color-border: rgba(255, 255, 255, 0.08);
   --color-border-strong: rgba(255, 255, 255, 0.14);
 
-  /* AIW accent -- metallic silver. Cool light tones that read sleek on
+  /* TWD accent -- metallic silver. Cool light tones that read sleek on
      the dark surface. The gradient (defined as a separate token below)
      gives primary buttons a brushed-metal sheen; the flat colour here
      covers everything else (badges, focus rings, accent text). */
@@ -174,7 +174,7 @@ html, body {
     line-height: var(--font-caption-line);
   }
 
-  /* AIW brand wordmark — italic with subtle slant to echo the logo */
+  /* TWD brand wordmark — italic with subtle slant to echo the logo */
   .aiw-wordmark {
     font-style: italic;
     font-weight: 700;

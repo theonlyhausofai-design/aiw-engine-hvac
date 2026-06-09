@@ -21,7 +21,7 @@ export default async function SetupPage() {
         <div className="mx-auto flex max-w-3xl items-center gap-3">
           <Image
             src="/aiw-logo.png"
-            alt="AIW"
+            alt="The Website Dept"
             width={36}
             height={36}
             priority
