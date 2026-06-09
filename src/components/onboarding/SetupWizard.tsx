@@ -962,11 +962,10 @@ function StepExpertBrain({
 
         <NavButtons
           onBack={onBack}
-          onNext={apply}
-          nextLabel="Ingest & continue"
+          onNext={proposal ? apply : onApplied}
+          nextLabel={proposal ? "Ingest & continue" : "Skip & continue"}
           busy={busy}
           nextDisabled={false}
-          nextLabel={proposal ? "Ingest & continue" : "Skip & continue"}
         />
       </CardContent>
     </Card>
