@@ -1038,10 +1038,15 @@ function StepFirstGeneration({
           {done ? (
             <Button onClick={onComplete}>Open the workspace</Button>
           ) : (
-            <Button onClick={run} disabled={busy}>
-              {busy ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : null}
-              {busy ? "Writing..." : "Generate 3 reels"}
-            </Button>
+            <div className="flex gap-2">
+              <Button variant="ghost" onClick={onComplete}>
+                Skip for now
+              </Button>
+              <Button onClick={run} disabled={busy}>
+                {busy ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : null}
+                {busy ? "Writing..." : "Generate 3 reels"}
+              </Button>
+            </div>
           )}
         </div>
       </CardContent>
