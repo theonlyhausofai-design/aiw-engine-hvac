@@ -1,4 +1,5 @@
-import { JSDOM } from "jsdom"
+// jsdom loaded dynamically to avoid ESM issues on Vercel serverless
+const getJSDOM = async () => (await import("jsdom")).JSDOM
 import { createAdminSupabase } from "@/lib/supabase/admin"
 import {
   analyseInspirationVideo,
@@ -831,7 +832,7 @@ async function fetchAndExtract(url: string): Promise<{
     // stripping (the previous approach) is fragile against adversarial /
     // malformed markup (CodeQL `js/bad-tag-filter`). jsdom is already a
     // content-engine dependency.
-    const dom = new JSDOM(html)
+    const dom = new (await getJSDOM())(html)
     const doc = dom.window.document
     // Drop noise elements before extracting text so script / style /
     // iframe content doesn't pollute the LLM context.
