@@ -965,7 +965,8 @@ function StepExpertBrain({
           onNext={apply}
           nextLabel="Ingest & continue"
           busy={busy}
-          nextDisabled={!proposal}
+          nextDisabled={false}
+          nextLabel={proposal ? "Ingest & continue" : "Skip & continue"}
         />
       </CardContent>
     </Card>
